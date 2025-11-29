@@ -12,18 +12,18 @@
     "import-sort"
   ],
   "license": "MIT",
-  "author": "Your Name",
+  "author": "sao-coding",
   "type": "module",
   "exports": {
-    "import": "./dist/index.js",
-    "types": "./dist/index.d.ts"
+    "import": "./dist/index.mjs",
+    "types": "./dist/index.d.mts"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "dev:inspector": "eslint-config-inspector --config eslint-inspector.config.ts",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint --fix .",
@@ -51,6 +51,7 @@
     "@eslint/config-inspector": "^1.4.2",
     "@types/node": "^24.10.1",
     "eslint": "^9.39.1",
+    "tsdown": "0.17.0-beta.1",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
