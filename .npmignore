@@ -1,0 +1,23 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development files
+eslint.config.ts
+.gitignore
+.npmignore
+
+# IDE
+.vscode/
+.idea/
+
+# Tests
+*.test.ts
+*.spec.ts
+
+# Build artifacts
+*.tsbuildinfo
+
+# Logs
+*.log

@@ -1,0 +1,63 @@
+{
+  "name": "@your-org/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint configuration for Next.js, React, TypeScript, and Tailwind CSS projects",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "import-sort"
+  ],
+  "license": "MIT",
+  "author": "Your Name",
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "dev:inspector": "eslint-config-inspector --config eslint-inspector.config.ts",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@eslint-react/eslint-plugin": "^2.3.5",
+    "@eslint/js": "^9.39.1",
+    "@next/eslint-plugin-next": "^16.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.46.4",
+    "@typescript-eslint/parser": "^8.46.4",
+    "eslint-config-flat-gitignore": "^2.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-better-tailwindcss": "^3.7.10",
+    "eslint-plugin-import-lite": "^0.3.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.3.0",
+    "globals": "^16.5.0",
+    "local-pkg": "^1.1.2"
+  },
+  "devDependencies": {
+    "@eslint/config-inspector": "^1.4.2",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
