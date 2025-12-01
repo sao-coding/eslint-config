@@ -51,8 +51,7 @@
     "@eslint/config-inspector": "^1.4.2",
     "@types/node": "^24.10.1",
     "eslint": "^9.39.1",
-    "tsdown": "0.17.0-beta.1",
-    "tsup": "^8.3.5",
+    "tsdown": "^0.17.0-beta.4",
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
